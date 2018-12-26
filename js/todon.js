@@ -70,11 +70,42 @@ function saveToDo(name, detail, status)
     });
 }
 
+function saveContact(name, email, message)
+{
+	// write to DB and send mail - ajax
+	$.ajax({
+        method: "POST",
+        dataType: "json",
+		async: true,
+        url: "api/ajax_mail.php?action=create",
+        data: { Name: name, eMail: email, Message: message }
+    })
+    .done(function (data) {
+        if (data.Result == "OK") {
+			Alert("Message sent");
+        }
+        if (data.status == "ERROR") {
+            alert(data.message);
+        }
+    })
+    .fail(function (data) {
+        alert(data.responseText);
+    });
+}
+
 function submitToDoForm()
 {
 	name = $("#toDoName").val();
 	detail = $("#toDoDetail").val();
 	saveToDo(name, detail, 0);
+}
+
+function submitContactForm()
+{
+	name = $("#contactName").val();
+	email = $("#contactEMail").val();
+	message = $("#contactMessage").val();
+	saveContact(name, email, message);
 }
 
 function loadToDo(id)
