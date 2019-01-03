@@ -2,9 +2,9 @@
 
 global $mysqli;
 $DBServer = "localhost";
-$DBUser = "todon";
-$DBPassword = "todon";
-$DBSchema = "todon";
+$DBUser = "cairnsco_todon";
+$DBPassword = "123Password+1";
+$DBSchema = "cairnsco_blackoutrugbytools";
 
 //Open database connection
 function dbconnect()

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Tour Divide To-Dos!</title>
+    <meta content="IE=edge" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Icons -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <!-- Styles -->
+    <link href="../common/css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="../common/css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="../common/css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="../common/css/swipebox.min.css" rel="stylesheet" type="text/css">
+    <link href="../common/css/style.css" rel="stylesheet" type="text/css">
+	
+    <link href="../common/css/todon.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div class="m-scene" id="main"> <!-- Main Container -->
+
+      <!-- Sidebars -->
+      <!-- Right Sidebar -->
+      <ul id="slide-out" class="side-nav">
+        <li class="sidenav-header">
+          <!-- Srearch bar -->
+          <nav class="transparent no-shadow">
+            <div class="nav-wrapper active p-20">
+              <h3>Tour Divide</h3>
+            </div>
+          </nav>
+        </li>
+        <!-- Tabs -->
+        <li>
+          <ul class="tabs">
+            <li class="tab col s3"><a class="active" href="#sidebar1">About </a></li>
+            <li class="tab col s3"><a href="#sidebar2">Links</a></li>
+          </ul>
+        </li>
+        <li id="sidebar1" class="p-20">
+          <!-- Twitter -->
+          <div class="twitter">
+            <h6 class="follow-us"><i class=""></i> What is it?</h6>
+            <div class="tweet">
+              <p>A 4,500km mountain bike cycle through the North American Rocky Mountains.</p>
+            </div>
+            <h6 class="follow-us"><i class=""></i> Where is it?</h6>
+            <div class="tweet">
+              <p>From Banff in Canada, Alberta to Antelope Wells, New Mexico, USA.</p>
+            </div>
+            <h6 class="follow-us"><i class=""></i> Are you crazy?</h6>
+            <div class="tweet">
+              <p>I'd like to think so.</p>
+            </div>
+            <h6 class="follow-us"><i class=""></i> How long will it take?</h6>
+            <div class="tweet">
+              <p>I'll be away from home for 44 days, of which 28 days are planned for the ride. I have 7 days spare in case I dont finish in time.</p>
+            </div>			
+          </div>
+
+        </li>
+        <li id="sidebar2" class="p-20">
+          <!-- Chat -->
+          <div class="chat-sidebar">
+            <!-- div class="chat-img">
+              <img src="" alt="" class="cricle">
+              <span class="dot green"></span>
+            </div -->
+            <div class="">
+              <a href="http://tourdivide.org"><p>Home page</p></a>
+              <span>The official (out of date) Tour Divide home page.</span>
+            </div>
+          </div>
+          <div class="chat-sidebar">
+            <div class="chat-message">
+              <a href="http://www.trackleaders.com/tourdivide18"><p>2018 Tracking</p></a>
+              <span>Each rider carries a tracker and can be tracked on a 30 minute basis.</span>
+            </div>
+          </div>
+                    <div class="chat-sidebar">
+            <div class="chat-message">
+              <a href="https://www.facebook.com/groups/tourdivide/"><p>Gear, Advice, Tips...</p></a>
+              <span>My favorite facebook page to help get ready for the big day.</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- Left Sidebar -->
+      <ul id="slide-out-left" class="side-nav collapsible">
+        <li>
+          <div class="sidenav-header primary-color">
+            <!-- div class="nav-social">
+              <i class="ion-social-facebook"></i>
+              <i class="ion-social-twitter"></i>
+              <i class="ion-social-tumblr"></i>
+            </div -->
+            <div class="nav-avatar">
+              <img class="circle avatar" src="img/cairnswm.jpg" alt="">
+              <div class="avatar-body">
+                <h3>To Do</h3>
+                <p>Natural Programming Style</p>
+              </div>
+            </div>
+          </div>
+        </li>
+		
+        <li><a href="index.html" class="no-child"><i class="ion-android-home"></i> Home</a></li>
+		
+        <li><a href="contact.html" class="no-child"><i class="ion-android-map"></i> Contact</a></li>
+		
+        <li><a href="about.html" class="no-child"><i class="ion-android-list"></i> About</a></li>
+        
+      </ul>
+      <!-- End of Sidebars -->
+
+      <!-- Page Content -->
+      <div id="content">
+
+        <!-- Toolbar -->
+        <div id="toolbar" class="halo-nav box-shad-none">
+          <div class="open-left" id="open-left" data-activates="slide-out-left">
+            <i class="ion-android-menu"  style="color:#005599"></i>
+          </div>
+          <span class="title none">Tour Divide - To Dos</span>
+          <div class="open-right" id="open-right" data-activates="slide-out">
+            <i class="ion-android-person" style="color:#005599"></i>
+          </div>
+        </div>
+        
+        <!-- Hero Header -->
+		<header>
+        <div class="h-banner animated fadeindown">
+          <div class="parallax bgtodo">
+            <div class="banner-title"  style="color:#005599">To Do</div>
+          </div>
+        </div>		
+
+		<main class="todo">
+			<h2>Contact us</h2><br/>
+			<form class="col s12">
+				<div class="row">
+					<div class="input-field col s12">
+					  <input placeholder="Your Name" id="contactName" type="text" class="validate">
+					  <label for="contactName">Name</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+					  <input placeholder="Your eMail" id="contactEMail" type="text" class="validate">
+					  <label for="contactEMail">eMail</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+					  <input placeholder="Your Message" id="contactMessage" type="text" class="validate">
+					  <label for="contactMessage">Message</label>
+					</div>
+				</div>
+			</form>
+			<div class="modal-footer">
+				<a href="#!" onclick="submitContactForm()" class="modal-close waves-effect waves-blue btn">Send</a>
+			</div>
+		</main>
+
+        <!-- Floating Action Button -->
+        <div class="floating-button page-fab animated bouncein delay-3">
+          <a class="btn-floating btn-large waves-effect waves-light accent-color btn z-depth-1 modal-trigger" href="#modal4">
+            <i data-target="modal1" class="ion-android-add"></i>
+          </a>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">Things to remember for the Tour Divide!</p>
+                <!--div class="center-align">
+                  <i class="ion-social-facebook m-10 white-text"></i>
+                  <i class="ion-social-twitter m-10 white-text"></i>
+                  <i class="ion-social-pinterest m-10 white-text"></i>
+                  <i class="ion-social-dribbble m-10 white-text"></i>
+                </div-->
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+            <div class="container">
+            (c) 2018 CairnsWM
+            <!-- a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a -->
+            </div>
+          </div>
+        </footer>
+      </div> <!-- End of Page Content -->
+
+    </div> <!-- End of Page Container -->
+    
+    <script src="../common/js/jquery-2.1.0.min.js"></script>
+    <script src="../common/js/jquery.swipebox.min.js"></script>   
+    <script src="../common/js/materialize.min.js"></script> 
+    <script src="../common/js/swiper.min.js"></script>  
+    <script src="../common/js/jquery.mixitup.min.js"></script>
+    <script src="../common/js/masonry.min.js"></script>
+    <script src="../common/js/chart.min.js"></script>
+    <script src="../common/js/functions.js"></script>
+    <script src="js/todon.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 Tour Divide To Do
 =================
 
-Created to show my natural programming style to prospective employers
+Created to show my programming style to prospective employers
 
 ## Why Tour Divide?
 
@@ -9,10 +9,6 @@ I have a whiteboard with a list of ToDos for my Tour Divide Preparation. It make
 
 Development Process
 ===================
-
-## Template
-
-I started by using the Halo template for which I have a license. The template is based on Materialize which I dont know but as I was using the layout as is I did some quick learnign for the changes I wanted (eg to add Modal dialog).
 
 ## Layers
 
@@ -52,9 +48,9 @@ For this example the API was extended to create a toggle action on the todo tabe
 * No Auditing (the API allows auditing but was not implemented)
 * No spam checking
 
-## Front End
+## Front End - jQuery
 
-Based on the Halo - Material Design Template (https://themeforest.net/item/halo-material-design-mobile-template/14981441). My own images were added. 
+I started by using the Halo template for which I have a license. The template is based on Materialize which I dont know but as I was using the layout as is I did some quick learnign for the changes I wanted (eg to add Modal dialog). Halo - Material Design Template (https://themeforest.net/item/halo-material-design-mobile-template/14981441). My own images were added. 
 
 Worked on getting layout correct in the index.html and todon.css files. Once layout was correct I built the functionality (todon.js). Once sufficient functionality was added that no more changes to layout and css were required the index.html was copied for the contact and about pages. Additional functionality were added to these pages (mostly static).
 
@@ -71,19 +67,33 @@ It would make more sense to change the application flow to make the Contact and 
 * No edit functions
 * No security layer - anyone can modify
 
-## Time Taken
+
+Time Taken
+==========
+
+##API
 
 1. Database - minimal
 2. API - approc 30mins
+
+##jQuery
+
 3. Front End (ToDo page) - approx 3 hours
 4. Creating Markdown - 30 mins
 5. Contact and About - 45mins
+6. Deployment - 20mins
+
+## Refactor
+7. Create summary front page - 30mins
+8. Refactor jQuery version to allow reuse of common CSS and JS files
+
+# React
 
 ## Demo
 
 Will be loaded to my website.
 
-http://todo.anndeve.co.za
+http://www.anndeve.co.za/todon/
 
 Who am I?
 =========
