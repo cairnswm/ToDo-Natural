@@ -6,6 +6,13 @@ $audit_select = false; // True to record select statements in the ExecutionLog t
 $audit_history = false; // True to record all Insert/Update point in time records in <tablename>_history
 include_once "ActionsDBConfig.php";
 
+function set_headers() {
+    header("Content-Type: application/json");           
+    header("Access-Control-Allow-Origin: *");
+}
+
+set_headers();
+
 $tablename = "todo";
 $keyfield = "id";
 $searchfields = Array("Name");
